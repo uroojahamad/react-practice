@@ -1,0 +1,82 @@
+.container{
+    margin-top:50px;
+    width: 70%;
+    padding: 10px 5px 20px 40px;
+    background-color: lightgray;
+  }
+
+  .subcontainer {
+    width: 95%;
+    padding: 20px 20px 20px 20px;
+   }
+
+  .btn {
+  background-color: rgb(109, 162, 214);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  }
+
+  i{
+      margin-right: 10px;
+  }
+
+  h1, h4{
+    padding: 10px 10px 5px 10px;
+  }
+
+  .text{
+    width: 50%;
+    font-size: large;
+    text-align: left;
+    border: none;
+    background-color: white;
+  }
+
+  .strikeText{
+      text-decoration: line-through;
+      color: green;
+  }
+
+  .deletedItem{
+  background-color: rgba(207, 45, 45, 0.842);
+  border: none; 
+  color: white; 
+  padding: 5px 16px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  float: right;
+  border-radius: 10px;
+  }
+
+  .deletedItem:hover{
+  background-color: rgba(156, 17, 17, 0.89);
+  }
+
+  .fa-trash{
+    pointer-events: none;
+  }
+
+  .list{
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+ 
+  .d-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .d-flex-column {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(223, 17, 137);
+  }
+
+  .task-list, .completed-list {
+    width: 50%;
+    margin-right: 20px;
+  }
