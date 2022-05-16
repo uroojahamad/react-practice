@@ -4,22 +4,26 @@ import '../css/counter.css';
 const Counter = () => {
     const [count, setCount] = useState(0);
     const [activeNumber, setActiveNumber] = useState(5);
+    const btnArray = [5, 10, 15, 20];
 
     const increment = () => {
-        setCount(count + (parseInt(activeNumber)));
+        setCount((previousState) =>{
+            return previousState + activeNumber;
+        });
     };
 
     const decrement = () => {
-        setCount(() => {
-            if ((count - (parseInt(activeNumber))) < 0)
+        setCount((previousState) => {
+            if ((previousState - activeNumber) < 0)
                 return 0;
             else
-                return count - (parseInt(activeNumber));
+                return previousState - activeNumber;
         });
     };
 
     const changeActiveState = (e) => {
-        setActiveNumber(e.target.innerText);
+        const value = parseInt(e.target.innerText);
+        setActiveNumber(value);
     }
 
     return (
@@ -31,10 +35,11 @@ const Counter = () => {
                 <button className="count" onClick={decrement}>-</button>
             </div>
             <div className="flex-container">
-                <button className={`count-btn ${5 == activeNumber ? 'active' : ''}`} onClick={(e) => changeActiveState(e)}>5</button>
-                <button className={`count-btn ${10 == activeNumber ? 'active' : ''}`} onClick={(e) => changeActiveState(e)}>10</button>
-                <button className={`count-btn ${15 == activeNumber ? 'active' : ''}`} onClick={(e) => changeActiveState(e)}>15</button>
-                <button className={`count-btn ${20 == activeNumber ? 'active' : ''}`} onClick={(e) => changeActiveState(e)}>20</button>
+                {
+                    btnArray.map((number) =>{
+                        return <button className={`count-btn ${number === activeNumber ? 'active' : ''}`} onClick={changeActiveState}>{number}</button>
+                    })
+                }
             </div>
         </div>
     );
