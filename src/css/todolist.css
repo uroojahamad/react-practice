@@ -1,16 +1,16 @@
-.container{
-    margin-top:50px;
-    width: 70%;
-    padding: 10px 5px 20px 40px;
-    background-color: lightgray;
+.todolist-container{
+  width: 70%;
+  padding: 17px 30px 22px 26px;
+  background-color: lightgray;
+  margin: 19px 195px;
   }
 
-  .subcontainer {
+  .todolist-subcontainer {
     width: 95%;
     padding: 20px 20px 20px 20px;
    }
 
-  .btn {
+  .todolist-btn {
   background-color: rgb(109, 162, 214);
   border: none;
   color: white;
