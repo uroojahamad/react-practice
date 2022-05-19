@@ -3,7 +3,17 @@ import '../css/todolist.css';
 
 const TodoList = () => {
     const [tasks, setTasks] = useState('');
-    
+    const [taskArray,setTaskArray] = useState('[]');
+   
+    let arr = [];
+    const addTask = () => {
+        setTaskArray(() => {
+            return [tasks,...taskArray];
+        })
+        
+        
+    }
+
    
     return (
         <div className="todolist-container d-flex-column">
