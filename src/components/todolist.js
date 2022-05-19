@@ -7,7 +7,7 @@ const TodoList = () => {
    
     // let arr = [];
     const addTask = () => {
-        if(tasks.trim() === ""){
+        if(tasks === ""){
             return alert("Value can't be blank. Please add a Todo Item");
         }
         else{
@@ -23,7 +23,7 @@ const TodoList = () => {
         <div className="todolist-container d-flex-column">
             <h1 className="text-center">Todo List</h1>
             <div className="todolist-subcontainer input-group">
-                <input type="text" className="form-control" id="todoItem" placeholder="Add a todo item" onChange={(e) => setTasks(e.target.value)}/>
+                <input type="text" className="form-control" id="todoItem" placeholder="Add a todo item" onChange={(e) => setTasks(e.target.value.trim())}/>
                 <button className="todolist-btn" id="addItemToList" onClick={addTask}><i className="fa fa-plus"></i>Add</button>
             </div>
             <div className="todolist-subcontainer d-flex-row">
