@@ -13,11 +13,9 @@ const TodoList = () => {
         else{
             setTaskArray(() => {
                 return [tasks,...taskArray];
-            })
-        }
-        
-        
-    }
+            });
+        }        
+    };
    
     return (
         <div className="todolist-container d-flex-column">
@@ -29,7 +27,12 @@ const TodoList = () => {
             <div className="todolist-subcontainer d-flex-row">
                 <div className="task-list">
                     <h2>Your Items</h2>
-                    <ul className="list-group list-group-flush" id="listItem">{tasks}</ul>
+                    {
+                        taskArray.map((task) => {
+                            return <ul className="list-group list-group-flush" id="listItem">{task}</ul>
+                        })
+                    }
+                    
                 </div>
                 <div className="completed-list">
                     <h2>Completed Items</h2>
