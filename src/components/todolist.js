@@ -35,6 +35,10 @@ const TodoList = () => {
                                         <button className="text" onClick="markItemAsCompleted(this)">
                                             {task}
                                         </button>
+                                        <button className="deletedItem" onClick="deleteItem(this)">
+                                            <i className="fa fa-trash"></i>
+                                            Delete
+                                        </button>
                                     </li>
                                 )
                             })
