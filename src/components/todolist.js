@@ -4,8 +4,9 @@ import '../css/todolist.css';
 const TodoList = () => {
     const [tasks, setTasks] = useState('');
     const [taskArray, setTaskArray] = useState([]);
+    const [completedTaskArrray, setCompletedTaskArrray] = useState([]);
 
-    // let arr = [];
+    // Adding task to Todo List
     const addTask = () => {
         if (tasks === "") {
             return alert("Value can't be blank. Please add a Todo Item");
@@ -17,12 +18,22 @@ const TodoList = () => {
         }
     };
 
+    //Mark task as complete
+    const markItemAsCompleted = (e) =>{
+        const taskName = e.target.innerText
+        console.log(taskName);
+        setTaskArray(taskArray.filter(task => {
+                return task !== taskName;
+            })
+        )
+    }
+    
     return (
         <div className="todolist-container d-flex-column">
             <h1 className="text-center">Todo List</h1>
             <div className="todolist-subcontainer input-group">
                 <input type="text" className="form-control" id="todoItem" placeholder="Add a todo item" onChange={(e) => setTasks(e.target.value.trim())} />
-                <button className="todolist-btn" id="addItemToList" onClick={addTask}><i className="fa fa-plus"></i>Add</button>
+                <button className="todolist-btn" id="addItemToList" onClick={addTask}><i className="fa fa-plus"></i>Add Task</button>
             </div>
             <div className="todolist-subcontainer d-flex-row">
                 <div className="task-list">
@@ -32,10 +43,10 @@ const TodoList = () => {
                             taskArray.map((task) => {
                                 return (
                                     <li className="list-group-item">
-                                        <button className="text" onClick="markItemAsCompleted(this)">
+                                        <button className="text" onClick={markItemAsCompleted}>
                                             {task}
                                         </button>
-                                        <button className="deletedItem" onClick="deleteItem(this)">
+                                        <button className="deletedItem">
                                             <i className="fa fa-trash"></i>
                                             Delete
                                         </button>
