@@ -19,15 +19,17 @@ const TodoList = () => {
     };
 
     //Mark task as complete
-    const markItemAsCompleted = (e) =>{
+    const markItemAsCompleted = (e) => {
         const taskName = e.target.innerText
         console.log(taskName);
         setTaskArray(taskArray.filter(task => {
-                return task !== taskName;
-            })
-        )
+            return task !== taskName;
+        })
+        );
+
+        setCompletedTaskArrray([taskName, ...completedTaskArrray]);
     }
-    
+
     return (
         <div className="todolist-container d-flex-column">
             <h1 className="text-center">Todo List</h1>
@@ -59,7 +61,19 @@ const TodoList = () => {
                 </div>
                 <div className="completed-list">
                     <h2>Completed Items</h2>
-                    <ul className="list-group list-group-flush" id="completedListItem"></ul>
+                    <ul className="list-group list-group-flush" id="completedListItem">
+                        {
+                            completedTaskArrray.map(completedTask => {
+                                return (
+                                    <li className="list-group-item">
+                                        <button className="text strikeText">
+                                            {completedTask}
+                                        </button>
+                                    </li>
+                                )
+                            })
+                        }
+                    </ul>
                 </div>
             </div>
         </div>
