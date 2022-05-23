@@ -23,12 +23,22 @@ const TodoList = () => {
         const taskName = e.target.innerText
         console.log(taskName);
         setTaskArray(taskArray.filter(task => {
-            return task !== taskName;
-        })
+                return task !== taskName;
+            })
         );
 
         setCompletedTaskArrray([taskName, ...completedTaskArrray]);
-    }
+    };
+
+    //Delete a Task
+    const deletedItem = (e) =>{
+        const deleteTaskName = e.target.offsetParent.firstElementChild.innerText;
+        console.log(deleteTaskName);
+        setTaskArray(taskArray.filter(task => {
+                return task !== deleteTaskName;
+            })
+        );
+    };
 
     return (
         <div className="todolist-container d-flex-column">
@@ -48,7 +58,7 @@ const TodoList = () => {
                                         <button className="text" onClick={markItemAsCompleted}>
                                             {task}
                                         </button>
-                                        <button className="deletedItem">
+                                        <button className="deletedItem" onClick={deletedItem}>
                                             <i className="fa fa-trash"></i>
                                             Delete
                                         </button>
