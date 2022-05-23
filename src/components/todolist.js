@@ -14,14 +14,13 @@ const TodoList = () => {
         else {
             setTaskArray(() => {
                 return [tasks, ...taskArray];
-            });
+            });   
         }
     };
 
     //Mark task as complete
     const markItemAsCompleted = (e) => {
         const taskName = e.target.innerText
-        console.log(taskName);
         setTaskArray(taskArray.filter(task => {
                 return task !== taskName;
             })
@@ -33,7 +32,6 @@ const TodoList = () => {
     //Delete a Task
     const deletedItem = (e) =>{
         const deleteTaskName = e.target.offsetParent.firstElementChild.innerText;
-        console.log(deleteTaskName);
         setTaskArray(taskArray.filter(task => {
                 return task !== deleteTaskName;
             })
