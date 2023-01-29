@@ -1,8 +1,9 @@
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
-body {
+.scrimba-container {
+    width: 100%;
     margin: 0;
     font-family: Inter, sans-serif;
     height: 100vh;
