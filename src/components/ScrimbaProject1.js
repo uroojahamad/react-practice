@@ -3,7 +3,7 @@ import '../css/scrimbaproject1.css'
 
 const ScrimbaProject1 = () => {
     return (
-        <div>
+        <div className='scrimba-container'>
             <nav>
                 <img src={require(`../images/logo192.png`)} alt="react logo" />
                 <h3>ReactFacts</h3>
