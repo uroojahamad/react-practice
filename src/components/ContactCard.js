@@ -27,7 +27,7 @@ const ContactCard = () => {
     function search(){
         fecthDataFromAPI();
     }
-
+    console.log(cardData);
     return (
         <>
             <div className='contact-card-searchbox'>

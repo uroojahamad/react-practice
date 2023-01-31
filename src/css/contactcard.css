@@ -3,7 +3,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .contact-card {
@@ -13,13 +13,13 @@
     display: flex;
     flex-direction: column;
     padding: 13px;
-    padding-bottom: 20px;
+    padding-bottom: 1px;
     background-color: white;
 }
 
 .contact-card > img {
     width: 100%;
-    height: auto;
+    max-height: 70%;
     align-self: center;
     border-radius: 5px;
     object-fit: cover;
@@ -37,7 +37,7 @@
 }
 
 .info-group > img {
-    height: 11px;
+    height: 15px;
     margin-right: 8px;
 }
 
