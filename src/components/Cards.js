@@ -4,7 +4,8 @@ import '../css/contactcard.css';
 const Card = (props) => {
     return (
         <div className="contact-card">
-            <img src={require(`../images/cats-images/${props.imageName}.jpg`)} alt="mr whiskerson" />
+            {/* <img src={require(`../images/cats-images/${props.imageName}.jpg`)} alt="mr whiskerson" /> */}
+            <img src={props.imageUrl} alt={props.name}/>
             <h3>{props.name}</h3>
             <div className="info-group">
                 <img src={require("../images/phone-icon.png")} alt="phone-icon"/>

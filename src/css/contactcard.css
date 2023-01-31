@@ -3,7 +3,11 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
+<<<<<<< HEAD
     margin-top: 40px;
+=======
+    margin-top: 30px;
+>>>>>>> e9316d63a8c6e1958c6073b33673f6b12422c4ed
 }
 
 .contact-card {
@@ -13,13 +17,21 @@
     display: flex;
     flex-direction: column;
     padding: 13px;
+<<<<<<< HEAD
     padding-bottom: 20px;
+=======
+    padding-bottom: 1px;
+>>>>>>> e9316d63a8c6e1958c6073b33673f6b12422c4ed
     background-color: white;
 }
 
 .contact-card > img {
     width: 100%;
+<<<<<<< HEAD
     height: auto;
+=======
+    max-height: 70%;
+>>>>>>> e9316d63a8c6e1958c6073b33673f6b12422c4ed
     align-self: center;
     border-radius: 5px;
     object-fit: cover;
@@ -37,7 +49,11 @@
 }
 
 .info-group > img {
+<<<<<<< HEAD
     height: 11px;
+=======
+    height: 15px;
+>>>>>>> e9316d63a8c6e1958c6073b33673f6b12422c4ed
     margin-right: 8px;
 }
 
@@ -45,4 +61,20 @@
     margin-block: 3px;
     font-size: 12px;
     color: #2B283A;
+<<<<<<< HEAD
+=======
+}
+
+.contact-card-searchbox{
+    display: flex;
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card-searchbox > .input-group {
+    width: 50%;
+>>>>>>> e9316d63a8c6e1958c6073b33673f6b12422c4ed
 }
