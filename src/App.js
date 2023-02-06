@@ -4,8 +4,9 @@
 // import DiceRoll from './components/DiceRoll';
 // import TodoList from './components/todolist';
 // import ScrimbaProject1 from './components/ScrimbaProject1'
-import ContactCard from "./components/ContactCard";
+// import ContactCard from "./components/ContactCard";
 // import AirBnb from './components/AirBnb/AirBnb'
+import Buttons from "./components/Buttons";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
       {/* <DiceRoll/> */}
       {/* <TodoList/> */}
       {/* <ScrimbaProject1/> */}
-      <ContactCard/>
+      {/* <ContactCard/> */}
       {/* <AirBnb /> */}
+      <Buttons />
     </div>
   );
 }
