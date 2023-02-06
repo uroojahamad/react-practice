@@ -1,0 +1,49 @@
+.btn{
+    padding: 10px;
+    width: 60%;
+    font-size: 20px;
+    margin: 10px;
+  }
+  
+  button:disabled, button[disabled]{
+    border: 1px solid #999999;
+    background-color: darkgray;
+    color: #fff;
+    cursor: not-allowed;
+  }
+  
+  .primary{
+    border: 1px solid rgb(37, 99, 235);
+    background-color: rgb(37, 99, 235);
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .rounded{
+    border: 1px solid rgb(37, 99, 235);
+    background-color: rgb(37, 99, 235);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 500px !important;
+  }
+  
+  .outline{
+    border: 1px solid rgba(37, 99, 235);
+    background-color: rgba(37, 99, 235, 0);
+    color: rgb(37, 99, 235);
+    cursor: pointer;
+  }
+  
+  .transparent{
+    background-color: rgba(37, 99, 235, 0);
+    color: rgb(37, 99, 235);
+    cursor: pointer;
+    border: none;
+  }
+  
+  .danger{
+    background-color: rgb(220, 9, 9);
+    border: 1px solid  rgb(220, 9, 9);
+    color: rgb(10, 10, 10);
+    cursor: pointer;
+  }
