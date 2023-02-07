@@ -6,7 +6,9 @@
 // import ScrimbaProject1 from './components/ScrimbaProject1'
 // import ContactCard from "./components/ContactCard";
 // import AirBnb from './components/AirBnb/AirBnb'
-import Buttons from "./components/Buttons";
+// import Buttons from "./components/Buttons";
+
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -17,7 +19,8 @@ function App() {
       {/* <ScrimbaProject1/> */}
       {/* <ContactCard/> */}
       {/* <AirBnb /> */}
-      <Buttons />
+      {/* <Buttons /> */}
+      <Form />
     </div>
   );
 }
