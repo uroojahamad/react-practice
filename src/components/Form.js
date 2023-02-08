@@ -24,7 +24,10 @@ const Form = () => {
         })
     }
 
-
+    function handleSubmit(event) {
+        event.preventDefault()
+        console.log(formData)
+    }
 
     console.log(formData);
 
@@ -125,7 +128,8 @@ const Form = () => {
                     <option value="violet">Violet</option>
                 </select>
 
-               
+                {/* submit form data */}
+                <button>Submit</button>
     
 
             </form>
