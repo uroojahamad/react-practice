@@ -8,7 +8,8 @@
 // import AirBnb from './components/AirBnb/AirBnb'
 // import Buttons from "./components/Buttons";
 
-import Form from "./components/Form";
+// import Form from "./components/Form";
+import SignupForm from "./components/SignupForm";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       {/* <ContactCard/> */}
       {/* <AirBnb /> */}
       {/* <Buttons /> */}
-      <Form />
+      {/* <Form /> */}
+      <SignupForm />
     </div>
   );
 }
