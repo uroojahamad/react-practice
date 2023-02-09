@@ -8,8 +8,10 @@
 // import AirBnb from './components/AirBnb/AirBnb'
 // import Buttons from "./components/Buttons";
 
+import MemeGenerator from "./components/MemeGenerator/MemeGenerator";
+
 // import Form from "./components/Form";
-import SignupForm from "./components/SignupForm";
+// import SignupForm from "./components/SignupForm";
 
 function App() {
   return (
@@ -22,7 +24,8 @@ function App() {
       {/* <AirBnb /> */}
       {/* <Buttons /> */}
       {/* <Form /> */}
-      <SignupForm />
+      {/* <SignupForm /> */}
+      <MemeGenerator />
     </div>
   );
 }
