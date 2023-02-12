@@ -1,19 +1,25 @@
-/* * {
-    box-sizing: border-box;
-} */
-
 .scrimba-container {
     width: 100%;
     margin: 0;
     font-family: Inter, sans-serif;
     height: 100vh;
+    background-color: #eceef1;
+    color: black;
+}
+
+.dark {
+    width: 100%;
+    margin: 0;
+    font-family: Inter, sans-serif;
+    height: 100vh;
     background-color: #282D35;
+    color: #eceef1;
 }
 
 nav {
     display: flex;
     align-items: center;
-    background-color: #21222A;
+    /* background-color: #21222A; */
     height: 140px;
     padding: 30px 25px;
 }
@@ -42,7 +48,7 @@ nav > img {
 
 main {
     padding: 20px 90px;
-    color: white;
+    /* color: white; */
     background-image: url('../images/reactjs-icon2.png');
     background-repeat: no-repeat;
     background-position: right 70%;
@@ -67,4 +73,67 @@ main {
 .main--facts > li::marker {
     font-size: 1.4rem;
     color: #61DAFB;
+}
+
+.toggler {
+    display: flex;
+    align-items: center;
+}
+
+.toggler p {
+    /* font-size: 0.625rem; */
+    font-size: 1.625rem;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.toggler--slider {
+    width: 60px;
+    height: 25px;
+    background-color: #2B283A;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: content-box;
+}
+
+.scrimba-container.dark .toggler--slider {
+    border-color: white;
+    background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.scrimba-container.dark .toggler--slider--circle {
+    background-color: black;
+}
+
+.toggler--light {
+    color: #2B283A;
+}
+
+.scrimba-container.dark .toggler--light {
+    color: #918E9B;
+}
+
+.toggler--dark {
+    color: #D5D4D8;
+}
+
+.scrimba-container.dark .toggler-dark {
+    color: #FFFFFF;
+}
+
+.scrimba-container.dark .toggler--slider {
+    justify-content: flex-end;
 }
