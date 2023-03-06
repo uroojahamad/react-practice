@@ -39,7 +39,6 @@ const DropdownSelect = ({ }) => {
   const [result, setResult] = useState("");
 
   const handleSelectDropdown = (e) => {
-    console.log(e.target.value)
     setdropdown({optionName:e.target.value})
   }
 
@@ -48,7 +47,7 @@ const DropdownSelect = ({ }) => {
       const tempOptions = argValue.map((items) => ({value:items.argumentName}))
       setdropdownOptions(tempOptions);
     } else {
-      let obj = argValue.find(o => o.argumentName === dropdown.optionName);
+      const obj = argValue.find(o => o.argumentName === dropdown.optionName);
       setResult(obj?.argumentValue)
       }    
   }, [dropdown.optionName])
@@ -82,7 +81,7 @@ const DropdownSelect = ({ }) => {
         </select>
       </div>
       <div>
-        <h1>Result : {String(result)}</h1>
+        <h1>Result : {result!== undefined? String(result) : ''}</h1>
       </div>
     </>
 
