@@ -11,10 +11,9 @@
 // import Form from "./components/Form";
 // import SignupForm from "./components/SignupForm";
 // import UpdateJsonData from "./components/UpdateJsonData";
-
-import FetchingData from "./components/FetchingData";
-
 // import DropdownSelect from "./components/Dropdown/DropdownSelect";
+// import FetchingData from "./components/FetchingData";
+import CounterUsingReducer from "./components/CounterUsingReducer";
 
 function App() {
   return (
@@ -32,7 +31,8 @@ function App() {
       {/* <UpdateJsonData /> */}
 
       {/* <DropdownSelect /> */}
-      <FetchingData />
+      {/* <FetchingData /> */}
+      <CounterUsingReducer />
     </div>
   );
 }
