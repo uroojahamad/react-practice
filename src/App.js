@@ -12,7 +12,9 @@
 // import SignupForm from "./components/SignupForm";
 // import UpdateJsonData from "./components/UpdateJsonData";
 
-import DropdownSelect from "./components/Dropdown/DropdownSelect";
+import FetchingData from "./components/FetchingData";
+
+// import DropdownSelect from "./components/Dropdown/DropdownSelect";
 
 function App() {
   return (
@@ -29,7 +31,8 @@ function App() {
       {/* <MemeGenerator /> */}
       {/* <UpdateJsonData /> */}
 
-      <DropdownSelect />
+      {/* <DropdownSelect /> */}
+      <FetchingData />
     </div>
   );
 }
